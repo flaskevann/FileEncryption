@@ -12,7 +12,7 @@ namespace FileEncryption.GUI
 {
     public partial class Client : System.Windows.Forms.Form
     {
-        private static readonly string USER_MANUAL_URL = "https://google.com";
+        private static readonly string USER_MANUAL_URL = "https://github.com/flaskevann/FileEncryption/blob/master/Docs/UserManual.pdf";
 
         private readonly Color DEFAULT_CONTROL_BACKGROUND_COLOR;
 

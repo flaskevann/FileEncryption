@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <StartupObject>FileEncryption.GUI.Program</StartupObject>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>MyS3.GUI</Authors>
+    <Company>MyS3.GUI</Company>
+    <Version>3.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileEncryption\FileEncryption.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EncryptionAndHashingLibrary">
+      <HintPath>..\..\EncryptionAndHashingLibrary\EncryptionAndHashingLibrary\bin\Debug\netcoreapp3.1\EncryptionAndHashingLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="InfoBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

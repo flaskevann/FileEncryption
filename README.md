@@ -1,9 +1,15 @@
 # FileEncryption
 
-A tool for encrypting and decrypting files using AES-GCM cryptography. Built using NET Core.
+A tool for encrypting and decrypting files using AES-GCM cryptography.
 
-Has a nice and simple GUI client where files can be dragged and dropped.
+Built using NET Core so it can be copied or imported into any kind of NET project and be taken full advantage of.
 
-The GUI client can only run on Windows. However, the main library can be used anywhere in other circumstances.
+Has a GUI client that works well with Windows, where files can be dragged and dropped when encrypting/decrypting.
+
+## User Manual
 
 Se <code>Docs/UserManual.pdf</code> to get precise instructions with screenshots.
+
+## License
+
+Has a regular MIT license.

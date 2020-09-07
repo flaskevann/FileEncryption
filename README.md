@@ -8,7 +8,7 @@ Has a GUI client that works well with Windows, where files can be dragged and dr
 
 ## User Manual
 
-Se <code>Docs/UserManual.pdf</code> to get precise instructions with screenshots.
+See <code>Docs/UserManual.pdf</code> to get precise instructions with screenshots.
 
 ## License
 
